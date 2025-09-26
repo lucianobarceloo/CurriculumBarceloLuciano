@@ -3,7 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Mis intereses</title>
+    <style>
+        body {
+            background-image: url('imgs/fondo.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: cursive;
+        }
+        header {
+            background: white;
+            border: 5px solid rgb(1, 162, 1);
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(1, 162, 1);
+        }
+        .links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .hiper {
+            border: 1px solid #4682b4;
+            padding: 5px 10px;
+            background: white;
+        }
+        main {
+            margin: 40px auto;
+            width: 80vw;
+            background: #ffffffcc;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #e6e6fa;
+            border-top: 2px solid #4682b4;
+        }
+    </style>
 </head>
 
 <body>
@@ -11,28 +53,28 @@
         <img src="imgs/yo.jpg" height="300px" alt="fotoPersonal">
         <h1>Luciano Barceló Murrieta</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Me</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
+            <ul class="links">
+                <li class="hiper"><a href="index.html">Me</a></li>
+                <li class="hiper"><a href="interests.html">Interests</a></li>
+                <li class="hiper"><a href="schedule.html">Schedule</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h1>Mis intereses personales</h1>
-            <ul>
-                <li>Peliculas</li>
-                <li>Musica</li>
-                <li>Videojuegos</li>
-                <li>Deportes(Tennis mas que otros)</li>
+            <ul class="links">
+                <li class="hiper">Peliculas</li>
+                <li class="hiper">Musica</li>
+                <li class="hiper">Videojuegos</li>
+                <li class="hiper">Deportes(Tennis mas que otros)</li>
             </ul>
         </section>
         <section>
             <h1>Mis intereses profesionales</h1>
-            <ul>
-                <li>Desarrollo de software</li>
-                <li>Seguridad cibernetica</li>
+            <ul class="links">
+                <li class="hiper">Desarrollo de software</li>
+                <li class="hiper">Seguridad cibernetica</li>
             </ul>
         </section>
     </main>

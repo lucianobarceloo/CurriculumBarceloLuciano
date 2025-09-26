@@ -2,94 +2,150 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Mi horario</title>
-</head>
-
-<body>
-	<header>
-		<img src="imgs/yo.jpg" height="300px" alt="fotoPersonal">
-		<h1>Luciano Barceló Murrieta</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Me</a></li>
-				<li><a href="interests.html">Interests</a></li>
-				<li><a href="schedule.html">Schedule</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
+    <meta charset="UTF-8">
+    <title>Mi horario</title>
+    <style>
+        body {
+            background-image: url('imgs/fondo.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: cursive;
+        }
+        header {
+            background: white;
+            border: 5px solid rgb(1, 162, 1);
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(1, 162, 1);
+        }
+        .links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .hiper {
+            border: 1px solid #4682b4;
+            padding: 5px 10px;
+            background: white;
+        }
+        main {
+            margin: 40px auto;
+            width: 80vw;
+            background: #ffffffcc;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th,
+        td {
+            border: 1px solid #4682b4;
+            padding: 8px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #e6e6fa;
+            border-top: 2px solid #4682b4;
+        }
+    </style>
+    <header>
+    <img src="imgs/yo.jpg" height="300px" alt="fotoPersonal">
+    <h1>Luciano Barceló Murrieta</h1>
+    <nav>
+        <ul class="links">
+            <li class="hiper"><a href="index.html">Me</a></li>
+            <li class="hiper"><a href="interests.html">Interests</a></li>
+            <li class="hiper"><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
         <h1>Mi horario de clases</h1>
-		  <table>
-    <tr>
-      <th>Hora</th>
-      <th>Lunes</th>
-      <th>Martes</th>
-      <th>Miércoles</th>
-      <th>Jueves</th>
-      <th>Viernes</th>
-    </tr>
-    <tr>
-      <td class="hora">1:00 PM</td>
-      <td></td>
-      <td>Ingeniería de Requisitos<br>1:00 PM - 3:00 PM<br>Aulas 1800 AV1835</td>
-      <td>Ingeniería de Requisitos<br>1:00 PM - 3:00 PM<br>Aulas 1800 AV1835</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hora">2:00 PM</td>
-      <td>Sustentabilidad<br>2:00 PM - 3:00 PM<br>Aulas 700 AV0713</td>
-      <td>Ingeniería de Requisitos<br>1:30 PM - 3:00 PM</td>
-      <td>Sustentabilidad<br>2:00 PM - 3:00 PM<br>Aulas 700 AV0713</td>
-      <td></td>
-      <td>Sustentabilidad<br>2:00 PM - 3:00 PM<br>Aulas 700 AV0713</td>
-    </tr>
-    <tr>
-      <td class="hora">3:00 PM</td>
-      <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br>Aulas 1800 AV1829</td>
-      <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br>Laboratorio 1800 LV1823</td>
-      <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br>Aulas 1800 AV1829</td>
-      <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br>Laboratorio 1800 LV1823</td>
-      <td>Ingeniería de Requisitos<br>3:00 PM - 4:30 PM<br>Curso a distancia con<br>herramientas de Internet</td>
-    </tr>
-    <tr>
-      <td class="hora">4:00 PM</td>
-      <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br><br>Admón de Proyectos de Software<br>4:30 PM - 6:00 PM<br>Aulas 1800 AV1832</td>
-      <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br><br>Métodos Numéricos Computacionales<br>4:30 PM - 6:00 PM<br>Laboratorio 1800 LV1822</td>
-      <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br><br>Admón de Proyectos de Software<br>4:30 PM - 6:00 PM<br>Aulas 1800 AV1832</td>
-      <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br><br>Métodos Numéricos Computacionales<br>4:30 PM - 6:00 PM<br>Laboratorio 1800 LV1822</td>
-      <td>Ingeniería de Requisitos<br>3:00 PM - 4:30 PM</td>
-    </tr>
-    <tr>
-      <td class="hora">5:00 PM</td>
-      <td>Admin de Proyectos de Software<br>4:30 PM - 6:00 PM</td>
-      <td>Métodos Numéricos Computacionales<br>4:30 PM - 6:00 PM</td>
-      <td>Admin de Proyectos de Software<br>4:30 PM - 6:00 PM</td>
-      <td>Métodos Numéricos Computacionales<br>4:30 PM - 6:00 PM</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hora">7:00 PM</td>
-      <td></td>
-      <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM<br>Curso a distancia con<br>herramientas de Internet</td>
-      <td></td>
-      <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM<br>Curso a distancia con<br>herramientas de Internet</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td class="hora">8:00 PM</td>
-      <td></td>
-      <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM</td>
-      <td></td>
-      <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM</td>
-      <td></td>
-    </tr>
-  </table>
-	</main>
-	<footer>
-		<p>Luciano Barceló Murrieta - 2025</p>
-	</footer>
-</body>
+        <table>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td class="hora">1:00 PM</td>
+                <td></td>
+                <td>Ingeniería de Requisitos<br>1:00 PM - 3:00 PM<br>Aulas 1800 AV1835</td>
+                <td>Ingeniería de Requisitos<br>1:00 PM - 3:00 PM<br>Aulas 1800 AV1835</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hora">2:00 PM</td>
+                <td>Sustentabilidad<br>2:00 PM - 3:00 PM<br>Aulas 700 AV0713</td>
+                <td>Ingeniería de Requisitos<br>1:30 PM - 3:00 PM</td>
+                <td>Sustentabilidad<br>2:00 PM - 3:00 PM<br>Aulas 700 AV0713</td>
+                <td></td>
+                <td>Sustentabilidad<br>2:00 PM - 3:00 PM<br>Aulas 700 AV0713</td>
+            </tr>
+            <tr>
+                <td class="hora">3:00 PM</td>
+                <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br>Aulas 1800 AV1829</td>
+                <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br>Laboratorio 1800 LV1823</td>
+                <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br>Aulas 1800 AV1829</td>
+                <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br>Laboratorio 1800 LV1823</td>
+                <td>Ingeniería de Requisitos<br>3:00 PM - 4:30 PM<br>Curso a distancia con<br>herramientas de Internet
+                </td>
+            </tr>
+            <tr>
+                <td class="hora">4:00 PM</td>
+                <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br><br>Admón de Proyectos de Software<br>4:30 PM -
+                    6:00 PM<br>Aulas 1800 AV1832</td>
+                <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br><br>Métodos Numéricos Computacionales<br>4:30 PM - 6:00
+                    PM<br>Laboratorio 1800 LV1822</td>
+                <td>Arquitectura de Software<br>3:00 PM - 4:30 PM<br><br>Admón de Proyectos de Software<br>4:30 PM -
+                    6:00 PM<br>Aulas 1800 AV1832</td>
+                <td>Aplicaciones Web<br>3:00 PM - 4:30 PM<br><br>Métodos Numéricos Computacionales<br>4:30 PM - 6:00
+                    PM<br>Laboratorio 1800 LV1822</td>
+                <td>Ingeniería de Requisitos<br>3:00 PM - 4:30 PM</td>
+            </tr>
+            <tr>
+                <td class="hora">5:00 PM</td>
+                <td>Admin de Proyectos de Software<br>4:30 PM - 6:00 PM</td>
+                <td>Métodos Numéricos Computacionales<br>4:30 PM - 6:00 PM</td>
+                <td>Admin de Proyectos de Software<br>4:30 PM - 6:00 PM</td>
+                <td>Métodos Numéricos Computacionales<br>4:30 PM - 6:00 PM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hora">7:00 PM</td>
+                <td></td>
+                <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM<br>Curso a distancia con<br>herramientas de
+                    Internet</td>
+                <td></td>
+                <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM<br>Curso a distancia con<br>herramientas de
+                    Internet</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hora">8:00 PM</td>
+                <td></td>
+                <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM</td>
+                <td></td>
+                <td>Diseño de Sistemas Interactivos<br>7:30 PM - 9:00 PM</td>
+                <td></td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>Luciano Barceló Murrieta - 2025</p>
+    </footer>
+    </body>
 
 </html>

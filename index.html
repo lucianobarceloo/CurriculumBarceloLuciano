@@ -4,6 +4,55 @@
 <head>
     <title>Mi curriculum</title>
     <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url('imgs/fondo.jpg');
+            background-attachment: fixed;
+            /* Para q la imagen se quede fija aunq scrolleen*/
+            background-size: cover;
+            /* para la imagen cubra completamente el fondo*/
+            font-family: cursive;
+        }
+
+        header {
+            background: white;
+            border: 5px solid rgb(1, 162, 1);
+            margin: 20px;   
+            padding: 20px;
+        }
+
+        h1 {
+            color: rgb(1, 162, 1);
+        }
+
+        .links{
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .hiper{
+            border: 1px solid #4682b4;
+            padding: 5px 10px;
+            background: white;
+        }
+
+        main {
+            margin: 40px auto;
+            width: 80vw;
+            background: #ffffffcc;/*Para q este transparente*/
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #e6e6fa;
+            border-top: 2px solid #4682b4;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,10 +63,10 @@
         <h2>Correo: </h2><a>luciano.barcelo252086@potros.itson.edu.mx</a>
         <h2>Github: </h2><a href="https://github.com/lucianobarceloo">github.com/lucianobarceloo</a>
         <nav>
-            <ul>
-                <li><a href="index.html">Me</a></li>
-                <li><a href="interests.html">Interests</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
+            <ul class="links">
+                <li class="hiper"><a href="index.html">Me</a></li>
+                <li class="hiper"><a href="interests.html">Interests</a></li>
+                <li class="hiper"><a href="schedule.html">Schedule</a></li>
             </ul>
         </nav>
     </header>
