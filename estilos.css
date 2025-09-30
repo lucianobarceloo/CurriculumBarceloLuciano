@@ -3,8 +3,30 @@
     --main-color: rgb(1, 162, 1);
     --header-color-fondo: white;
     --border-color: #4682b4;
-    --footer-color-fondo: #90ff82;
+    --footer-color-fondo: #ddffd9;
     --box-shadow: 0 0 10px #4682b4;
+}
+
+section.info-section {
+    background: #fff;
+    border-radius: 8px;
+    margin: 24px 0;
+    padding: 18px 24px;
+    box-shadow: 0 2px 8px #0001;
+}
+h3 {
+    color: #4682b4;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+ol.idiomas-list {
+    padding-left: 24px;
+    margin: 0;
+}
+ol.idiomas-list li {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #228b22;
 }
 
 body {
